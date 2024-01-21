@@ -1,0 +1,32 @@
+Package: oaiiDemoApps
+Type: Package
+Title: Demo applications for oaii - 'OpenAI' API R Interface
+Version: 0.1.0
+Authors@R:
+  person("Cezary", "Kuran", , "cezary.kuran@gmail.com",  role = c("aut", "cre"))
+Description: R package containing applications that demonstrate
+  the practical use of the `oaii` package
+License: MIT + file LICENSE
+URL: https://github.com/cezarykuran/oaiiDemoApps
+Encoding: UTF-8
+LazyData: true
+Imports:
+  base64enc,
+  cli,
+  checkmate,
+  colourpicker,
+  fontawesome,
+  htmltools,
+  httr,
+  jsonlite,
+  log4r,
+  magrittr,
+  markdown,
+  oaii (>= 0.3.0),
+  shiny,
+  shinyjs,
+  utils
+Suggests:
+  testthat (>= 3.0.0)
+Config/testthat/edition: 3
+RoxygenNote: 7.3.0
