@@ -25,7 +25,7 @@ shinyapp_modFineTuningUI <- function(id) {
         )),
         column(2, textInput(
           ns("fineTuningBatchSize"),
-          "n_epochs",
+          "batch_size",
           value = "auto"
         )),
         column(2, numericInput(

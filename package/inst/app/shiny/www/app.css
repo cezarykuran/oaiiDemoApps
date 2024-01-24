@@ -1,3 +1,16 @@
+#page {
+  position: relative;
+  padding-bottom: 4em;
+}
+#page .pkg-ver-container {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 1em;
+  font-weight: bold;
+  text-align: center;
+}
+
 .tabbable > .nav {
   margin: 25px 0 30px 0
 }

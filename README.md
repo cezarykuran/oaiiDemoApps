@@ -1,6 +1,6 @@
 # Demo applications for [oaii (OpenAI API R Interface)](https://github.com/cezarykuran/oaii.git)
 
-- An interactive Shiny demo application, which can be accessed at https://cezarykuran.shinyapps.io/oaii/ (feel free to explore its functionality!).
+- An interactive Shiny demo application, which can be accessed at https://r.cezarykuran.it/shiny/oaii/ (feel free to explore its functionality!).
 - Several demonstration terminal applications written as R scripts. These applications serve as practical examples, demonstrating how to effectively leverage the package's functions for API communication.
 
 ## Instalation

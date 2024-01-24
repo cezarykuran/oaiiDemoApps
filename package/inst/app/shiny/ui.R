@@ -1,4 +1,13 @@
-ui <- fluidPage(
+ui <- shiny::fluidPage(
+  id = "page",
+  theme =
+    bslib::bs_theme(
+      preset = "flatly",
+      base_font = bslib::font_google("Open Sans"),
+      version = 5,
+      font_scale = 0.8
+    ),
+
   # resources ----
   shinyjs::useShinyjs(),
   includeScript(file.path("www", "widgets.js")),
@@ -77,5 +86,14 @@ ui <- fluidPage(
         oaiiDemoApps::shinyapp_modImageEditUI("imge")
       )
     )
+  ),
+  
+  div(
+    class = "pkg-ver-container",
+    R.version$version.string,
+    ", ",
+    paste0("oaiiDemoApp v", packageVersion("oaiiDemoApps")),
+    ", ",
+    paste0("oaii v", packageVersion("oaii"))
   )
 )

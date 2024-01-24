@@ -48,6 +48,11 @@ apiPanel <- function(..., md_file = NULL) {
 inputSetState <- function(id, state = NULL) {
   shinyjs::runjs(paste0(
     "$('#", id, "')",
+    ".removeClass('is-invalid is-valid')",
+    if (is.character(state)) {
+      if (state == "success") ".addClass('is-valid')"
+      else ".addClass('is-invalid')"
+    },
     ".closest('.form-group')",
     ".removeClass('has-warning has-error has-success')",
     if (!is.null(state)) ".addClass('has-", state, "')"

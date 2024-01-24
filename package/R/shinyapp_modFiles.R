@@ -64,12 +64,12 @@ shinyapp_modFiles <- function(id, api_key, files_df) {
         value <- df[row, "id"]
         as.list(paste0(
           tags$button(
-            class = "btn btn-default btn-xs",
+            class = "btn btn-default btn-sm btn-xs",
             onclick = paste0("oaiiShinyApp.tableBtn('", ns("filesTableDownload"),"','", value, "')"),
             fontawesome::fa("download")
           ),
           tags$button(
-            class = "btn btn-danger btn-xs",
+            class = "btn btn-danger btn-sm btn-xs",
             onclick = paste0("oaiiShinyApp.tableBtn('", ns("filesTableRm"), "','", value, "')"),
             fontawesome::fa("trash")
           )

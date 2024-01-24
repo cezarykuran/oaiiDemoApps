@@ -154,7 +154,10 @@ tableContainer <- function(...) {
 buttonContainer <- function(..., label = NULL) {
   htmltools::div(
     class = "form-group",
-    htmltools::tags$label(htmltools::HTML(paste0(label, "&nbsp;"))),
+    htmltools::tags$label(
+      class = "form-label",
+      htmltools::HTML(paste0(label, "&nbsp;"))
+    ),
     div(
       class = "oaii-tableContainerContent",
       ...
@@ -165,7 +168,7 @@ buttonContainer <- function(..., label = NULL) {
 # create label with (?) icon (tooltip)
 tooltipLabel <- function(label, tooltipContent, tooltipIcon = "question-circle") {
   bslib::tooltip(
-    tagList(label, shiny::icon(tooltipIcon, class = "text-primary")),
+    tagList(label, shiny::icon(tooltipIcon, class = "text-primary text-success")),
     tooltipContent
   )
 }
