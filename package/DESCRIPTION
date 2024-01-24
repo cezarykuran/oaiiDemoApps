@@ -12,17 +12,15 @@ Encoding: UTF-8
 LazyData: true
 Imports:
   base64enc,
+  bslib,
   cli,
-  checkmate,
   colourpicker,
   fontawesome,
   htmltools,
-  httr,
   jsonlite,
-  log4r,
   magrittr,
   markdown,
-  oaii (>= 0.3.0),
+  oaii (>= 0.4.0),
   shiny,
   shinyjs,
   utils

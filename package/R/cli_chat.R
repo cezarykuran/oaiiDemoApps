@@ -7,7 +7,7 @@
 #' Additionally, you have the flexibility to adjust various parameters
 #' that govern the behavior of the chatbot.
 
-#' @inheritParams oaii::chat_request
+#' @inherit oaii::chat_request params
 #' @export
 #'
 #' @examples
