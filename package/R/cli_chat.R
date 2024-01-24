@@ -16,6 +16,10 @@
 #' }
 #' 
 cli_chat <- function(api_key) {
+  # asserts
+  stopifnot(
+    "`api_key` must be a non-empty string" = checkmate::testString(api_key, min.chars = 1)
+  )
 
   # ---- settings -----
   settings <- new.env()

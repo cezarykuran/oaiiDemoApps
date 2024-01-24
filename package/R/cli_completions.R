@@ -12,6 +12,11 @@
 #' }
 #' 
 cli_completions_simle_data <- function(api_key) {
+  # asserts
+  stopifnot(
+    "`api_key` must be a non-empty string" = checkmate::testString(api_key, min.chars = 1)
+  )
+
   # prompt
   now <- format(
     as.POSIXct(as.integer(Sys.time()), origin="1970-01-01"),
@@ -76,6 +81,10 @@ cli_completions_simle_data <- function(api_key) {
 #' }
 #' 
 cli_completions_data_transmission <- function(api_key) {
+  # asserts
+  stopifnot(
+    "`api_key` must be a non-empty string" = checkmate::testString(api_key, min.chars = 1)
+  )
   
   # input data
   df <- data.frame(
